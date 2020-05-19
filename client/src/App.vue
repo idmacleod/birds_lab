@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <sightings-form />
-    <sightings-grid :sightings="sightings" />
+    <sightings-grid />
   </div>
 </template>
 

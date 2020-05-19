@@ -25,6 +25,10 @@ export default {
 		let index = this.sightings.findIndex(sighting => sighting._id === id);
 		this.sightings.splice(index, 1);
 	})
+
+	eventBus.$on('sighting-added', (sighting) => {
+		this.sightings.push(sighting);
+	})
   },
   methods: {
     fetchData(){
